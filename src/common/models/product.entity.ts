@@ -14,8 +14,4 @@ export class Product {
 
     @Column('decimal')
     price: number;
-
-    @ManyToMany(() => Order, order => order.products)
-    @JoinTable()
-    orders: Order[];
 }
