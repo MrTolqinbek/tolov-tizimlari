@@ -36,4 +36,10 @@ export class Order {
     default: 0,
   })
   totalAmount: number;
+
+  @Column({
+    type: 'timestamp',
+    default: () => 'CURRENT_TIMESTAMP',
+  })
+  createdAt: Date;
 }

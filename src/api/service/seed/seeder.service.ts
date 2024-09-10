@@ -23,12 +23,12 @@ export class SeederService implements OnModuleInit {
     const users = [
       {
         email: 'default@mail.com',
-        password:hash,
+        password: hash,
         name: 'John Doe',
       },
       {
-        email: 'jane.smith@example.com',
-        password: 'password456',
+        email: 'killer@example.com',
+        password: hash,
         name: 'Jane Smith',
       },
     ];
@@ -46,11 +46,17 @@ export class SeederService implements OnModuleInit {
 
     // Seed Products
     const products = [
-      { name: 'Laptop', description: 'High-performance laptop', price: 1200.0 },
       {
-        name: 'Smartphone',
+        name: 'Laptop Lenova',
+        description: 'High-performance laptop',
+        price: 1200.0,
+        stock: 10000,
+      },
+      {
+        name: 'Smartphone Samsung' ,
         description: 'Latest model smartphone',
         price: 800.0,
+        stock: 10000,
       },
     ];
 
